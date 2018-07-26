@@ -1,0 +1,28 @@
+<div class="wrapper">
+  <div class="container">
+    <div class="landing-title">
+      <h1 class="text-center">For Today</h1>
+    </div>
+    <div class="row">
+      <% @cocktails.each do |cocktail| %>
+        <div class="col col-sx-12 col-sm-4">
+          <div class="card">
+            <%= link_to cocktail_path(cocktail) do %>
+              <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://s3-media3.fl.yelpcdn.com/bphoto/8ALFZ2Ik8NBP-l0EOtPKgA/o.jpg');">
+                <div class="card-description">
+                  <%= cocktail.name %>
+                </div>
+              </div>
+            <% end %>
+            <div class="card-actions">
+              <div class="card-ingredient">
+                lime, burbon, apple, tree
+              </div>
+              <a href="#" class="card-info"><i class="fas fa-share"></i></a>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

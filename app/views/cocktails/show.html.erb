@@ -1,1 +1,11 @@
-<h1><%= @cocktail.name %></h1>
+<div class="show-page">
+  <div class="left-box">
+    <div class="cocktail-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://s3-media3.fl.yelpcdn.com/bphoto/8ALFZ2Ik8NBP-l0EOtPKgA/o.jpg');">
+    </div>
+  </div>
+  <div class="right-box">
+    <%= link_to "HOME", :root, class: "home-btn"%>
+    <h1 class="cocktail-name"><%= @cocktail.name %></h1>
+    <%= link_to "ADD RECIPE", new_cocktail_dose_path(cocktail_id) %>
+  </div>
+</div>

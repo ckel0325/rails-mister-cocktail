@@ -1,0 +1,40 @@
+.show-page {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-box {
+  box-shadow: 0px 1px 20px rgba(0,0,0,0.6);
+  width: 50%;
+  height: 100vh;
+}
+
+.cocktail-image {
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.right-box {
+  width: 50%;
+  height: 100vh;
+  position: relative;
+
+}
+.home-btn {
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.home-btn:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: black;
+}
+.cocktail-name {
+  position: absolute;
+  left: 10px;
+}
