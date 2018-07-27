@@ -4,8 +4,33 @@
     </div>
   </div>
   <div class="right-box">
-    <%= link_to "HOME", :root, class: "home-btn"%>
-    <h1 class="cocktail-name"><%= @cocktail.name %></h1>
-    <%= link_to "ADD RECIPE", :root %>
+    <div class="text-right">
+      <%= link_to "HOME", :root, class: "home-btn"%>
+    </div>
+    <div class="cocktail-content">
+      <h1 class="cocktail-name"><%= @cocktail.name %></h1>
+      <div class="show-actions">
+        <ul class="list-inline">
+          <li><%= link_to "ADD INGREDIENT", new_cocktail_dose_path(@cocktail), class: "show-btn" %></li>
+          <li><%= link_to "EDIT", edit_cocktail_path(@cocktail), class: "show-btn" %></li>
+          <li><%= link_to "DELETE", cocktail_path, method: :delete, data: { confirm: "You don't like #{@cocktail.name}?" }, class: "show-btn" %></li>
+        </ul>
+      </div>
+      <div class="show-ingredients">
+        <h3>Ingredients</h3>
+        <table>
+          <tbody>
+            <% @cocktail.doses.each do |dose| %>
+              <tr>
+                <td><%= dose.ingredient.name %></td>
+                <td>| <%= dose.description %></td>
+              </tr>
+            <% end %>
+          </tbody>
+        </table>
+        <ul class="ingredients-list">
+        </ul>
+      </div>
+    </div>
   </div>
 </div>

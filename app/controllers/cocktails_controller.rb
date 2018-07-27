@@ -33,7 +33,7 @@ class CocktailsController < ApplicationController
   def destroy
     @cocktail.destroy
 
-    rediect_to :root
+    redirect_to :root
   end
 
   private

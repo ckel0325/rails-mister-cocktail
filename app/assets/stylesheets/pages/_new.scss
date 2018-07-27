@@ -10,6 +10,7 @@
   background-color: rgba(244,244,244,1);
   opacity: 0.8;
   text-shadow: 0px 1px 6px rgba(0,0,0,0.5);
+  position: relative;
 }
 
 .form-title {
@@ -35,7 +36,6 @@ a:hover {
 .btn-form:hover {
   opacity: 1;
   color: black;
-
 }
 
 .input {
@@ -43,3 +43,17 @@ a:hover {
   box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
 }
 
+.new-home-btn {
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+}
+
+.new-home-btn:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: black;
+}

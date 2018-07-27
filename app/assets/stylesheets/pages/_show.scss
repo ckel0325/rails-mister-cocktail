@@ -18,15 +18,12 @@
 .right-box {
   width: 50%;
   height: 100vh;
-  position: relative;
 
 }
 .home-btn {
   color: rgba(0,0,0,0.4);
   text-decoration: none;
-  position: absolute;
-  top: 5px;
-  right: 5px;
+  padding-right: 10px;
 }
 
 .home-btn:hover {
@@ -34,7 +31,27 @@
   opacity: 1;
   color: black;
 }
-.cocktail-name {
-  position: absolute;
-  left: 10px;
+
+.cocktail-content {
+  padding-left: 20px;
+}
+
+.show-actions {
+  color: rgba(0,0,0,0.5);
+}
+
+.show-btn {
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+}
+
+.show-btn:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: black;
+}
+
+.ingredients-list {
+  list-style: none;
+  font-size: 20px;
 }
