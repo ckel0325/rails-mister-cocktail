@@ -8,7 +8,7 @@
         <div class="col col-sx-12 col-sm-4">
           <div class="card">
             <%= link_to cocktail_path(cocktail) do %>
-              <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('https://s3-media3.fl.yelpcdn.com/bphoto/8ALFZ2Ik8NBP-l0EOtPKgA/o.jpg');">
+              <div class="card-image" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= cocktail.photo? ? (cl_image_path cocktail.photo, crop: :fill) : (image_path '1.jpg'); %>');">
                 <div class="card-description">
                   <%= cocktail.name %>
                 </div>

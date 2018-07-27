@@ -1,11 +1,15 @@
-.wrapper {
+.new-form-wrapper {
   height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
 
-.row {
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.5);
+.new-form-row {
+  box-shadow: 0px 2px 20px rgba(0,0,0,0.8);
   height: 100vh;
   background-color: rgba(244,244,244,1);
+  opacity: 0.8;
+  text-shadow: 0px 1px 6px rgba(0,0,0,0.5);
 }
 
 .form-title {
@@ -20,6 +24,8 @@
   opacity: 0.6;
   box-shadow: 0px 1px 6px rgba(0,0,0,0.5);
   text-decoration: none;
+  text-align: center;
+  vertical-align: center;
 }
 
 a:hover {
@@ -27,5 +33,13 @@ a:hover {
 }
 
 .btn-form:hover {
-  opacity: 1px;
+  opacity: 1;
+  color: black;
+
 }
+
+.input {
+  border: solid 5px;
+  box-shadow: 1px 1px 5px rgba(0,0,0,0.8);
+}
+
