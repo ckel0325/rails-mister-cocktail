@@ -57,3 +57,18 @@ a:hover {
   opacity: 1;
   color: black;
 }
+
+.new-back-btn {
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+
+}
+
+.new-back-btn:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: black;
+}

@@ -1,6 +1,7 @@
 <div class="wrapper new-form-wrapper" style="background-image: linear-gradient(0deg, rgba(0,101,168,0.3) 0%, rgba(0,36,61,0.4) 20%), url(<%= asset_path 'banner.jpg' %>);">
   <div class="container">
     <div class="row new-form-row">
+      <%= link_to "BACK", cocktail_path(@cocktail), class: "new-back-btn" %>
       <%= link_to "HOME", :root, class: "new-home-btn" %>
       <h1 class="text-center form-title">Edit <%= @cocktail.name %></h1>
       <%= render 'form', cocktail: @cocktail %>

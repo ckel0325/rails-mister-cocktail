@@ -15,6 +15,10 @@
   background-position: center;
 }
 
+.show-nav {
+  display: flex;
+  justify-content: space-between;
+}
 .right-box {
   width: 50%;
   height: 100vh;
@@ -55,3 +59,16 @@
   list-style: none;
   font-size: 20px;
 }
+
+.show-back-btn {
+  color: rgba(0,0,0,0.4);
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+.show-back-btn:hover {
+  text-decoration: none;
+  opacity: 1;
+  color: black;
+}
+
