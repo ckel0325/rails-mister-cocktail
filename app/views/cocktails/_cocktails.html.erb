@@ -1,7 +1,7 @@
 <div class="wrapper">
   <div class="container">
     <div class="landing-title">
-      <h1 class="text-center">For Today</h1>
+      <h1 class="text-center cocktails-home-title">For Today</h1>
     </div>
     <div class="row">
       <% @cocktails.each do |cocktail| %>
@@ -16,7 +16,9 @@
             <% end %>
             <div class="card-actions">
               <div class="card-ingredient">
-                lime, burbon, apple, tree
+                <% cocktail.doses.each do |dose| %>
+                  <%= dose.ingredient.name %>
+                <% end %>
               </div>
               <a href="#" class="card-info"><i class="fas fa-share"></i></a>
             </div>

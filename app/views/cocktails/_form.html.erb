@@ -1,11 +1,10 @@
-<div class="container">
-  <div class="row">
-    <div class="col col-xs-12 col-sm-6 col-sm-offset-3"></div>
-  </div>
+<div class="col col-xs-12 col-sm-6 col-sm-offset-3">
   <%= simple_form_for (@cocktail) do |f| %>
     <%= f.input :name, placeholder: "Name of Cocktail" %>
     <%= f.input :photo %>
     <%= f.input :photo_cache, as: :hidden %>
-    <%= f.submit "Nice Drink", class: "btn-self" %>
+    <div>
+      <%= f.submit "Nice Drink", class: "btn-form" %>
+    </div>
   <% end %>
 </div>
