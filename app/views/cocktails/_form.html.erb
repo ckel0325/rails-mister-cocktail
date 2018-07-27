@@ -1,4 +1,9 @@
-<%= simple_form_for (@cocktail) do |f| %>
-  <%= f.input :name, placeholder: "Name of Cocktail" %>
-  <%= f.submit %>
-<% end %>
+<div class="container">
+  <div class="row">
+    <div class="col col-xs-12 col-sm-6 col-sm-offset-3"></div>
+  </div>
+  <%= simple_form_for (@cocktail) do |f| %>
+    <%= f.input :name, placeholder: "Name of Cocktail" %>
+    <%= f.submit "Nice Drink", class: "btn-self" %>
+  <% end %>
+</div>
