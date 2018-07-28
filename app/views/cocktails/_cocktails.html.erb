@@ -16,7 +16,7 @@
             <% end %>
             <div class="card-actions">
               <div class="card-ingredient">
-                <% cocktail.doses.each do |dose| %>
+                <% cocktail.doses[0..2].each do |dose| %>
                   <%= dose.ingredient.name %>
                 <% end %>
               </div>
